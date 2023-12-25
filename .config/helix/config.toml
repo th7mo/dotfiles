@@ -10,6 +10,9 @@ mouse = false
 enable = true
 wrap-indicator = ">> "
 
+[editor.file-picker]
+hidden = false
+
 [keys.normal]
 "C-q" = ":buffer-close"
 "A-j" = [ # Move current line down
