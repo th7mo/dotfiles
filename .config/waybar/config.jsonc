@@ -30,13 +30,10 @@
     "format": "{app_id}"
   },
   "sway/workspaces": {
-    "format": "{icon}",
+    "format": "",
     "persistent-workspaces": {
       "1": []
     },
-    "format-icons": {
-      "1": "󰣨"
-    }
   },
   "bluetooth": {
     "tooltip": false,

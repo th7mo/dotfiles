@@ -1,54 +1,51 @@
 @define-color base #2d353b;
 @define-color crust #232a2e;
 @define-color text #d3c6aa;
-
+@define-color gray #4f585e;
 @define-color red #e67e80;
 
 * {
   font-family: Ubuntu Nerd Font;
   font-weight: bold;
-  font-size: 18px;
-}
-
-window#waybar {
-  background-color: @crust;
-  color: @text;
-}
-
-window#waybar.empty #window {
-  padding: 0;
+  font-size: 8px; /* dictates the size of the workspace dots & pillow */
   margin: 0;
-  border: 0;
-  background-color: transparent;
-}
-
-#workspaces button {
-  padding: 5px 10px;
-  color: @text;
-  border-radius: 10px;
-  margin: 10px 5px;
-}
-
-#workspaces button.focused {
-  background-color: @text;
-  color: @crust;
-}
-
-#workspaces button:hover {
+  padding: 0;
   box-shadow: none;
   text-shadow: none;
   background: none;
   transition: none;
-  border-color: transparent;
+  border: none;
+  min-width: 0;
+  min-height: 0;
 }
 
-#workspaces button.focused:hover {
-  background-color: @text;
+window#waybar {
+  color: @text;
+  background-color: @crust;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#workspaces button {
+  padding: 2px 8px;
+  margin: 0 4px;
+  border-radius: 9999px;
+  background-color: @gray;
 }
 
 #workspaces button.focused {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 2px 18px;
+  color: @crust;
+  background-color: @text;
+}
+
+#workspaces {
+  padding: 8px;
+  margin: 10px 3px;
+  border-radius: 18px;
+  background-color: @base;
 }
 
 #clock,
@@ -61,8 +58,9 @@ window#waybar #window,
 #battery,
 #custom-power {
   padding: 5px 13px;
-  border-radius: 18px;
   margin: 10px 3px;
+  font-size: 18px;
+  border-radius: 18px;
   color: @text;
   background-color: @base;
 }
@@ -75,12 +73,6 @@ window#waybar #window,
   margin-right: 6px;
 }
 
-
 #battery.low:not(.charging) {
   color: @red;
-}
-
-#window,
-#workspaces {
-  margin: 0 4px;
 }
