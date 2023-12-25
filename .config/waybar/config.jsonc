@@ -98,26 +98,4 @@
       ""
     ]
   }
-  // "pulseaudio": {
-  //   "tooltip": false,
-  //   "format": "{icon} {volume}%",
-  //   "format-muted": "󰖁",
-  //   "format-icons": {
-  //     "headphone": "󰋋",
-  //     "headset": "󰋎",
-  //     "hdmi": "󰡁",
-  //     "speaker": "󰓃",
-  //     "phone": "󰏲",
-  //     "portable": "󰏲",
-  //     "car": "",
-  //     "hifi": "󰐵",
-  //     "default": [
-  //       "",
-  //       "",
-  //       "󰕾",
-  //       ""
-  //     ]
-  //   },
-  //   "on-click": "pavucontrol"
-  // }
 }

@@ -8,7 +8,7 @@ mouse = false
 
 [editor.soft-wrap]
 enable = true
-wrap-indicator = "►"
+wrap-indicator = "►" # Not everybody uses nerd-patched fonts
 
 [editor.file-picker]
 hidden = false
