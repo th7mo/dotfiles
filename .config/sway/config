@@ -1,0 +1,147 @@
+### Variables ###
+    set $mod Mod4
+    set $left h
+    set $down j
+    set $up k
+    set $right l
+    set $term alacritty
+    set $browser firefox-bin
+
+    # Colors
+    set $cl-background #2d353b
+    set $cl-foreground #d3c6aa
+    set $cl-blue       #7fbbb3
+### Variables ###
+
+
+### Execute on startup ###
+    exec gentoo-pipewire-launcher &
+### Execute on startup ###
+
+
+### Hardware & backgrounds ###
+    output eDP-1 resolution 3840x2400 position 3840,0 scale 2.0
+    output * bg ~/.config/images/wallpaper.png fill
+    
+    input 1739:52861:SYNA32C8:00_06CB:CE7D_Touchpad {
+        natural_scroll enabled
+    }
+### Monitors & backgrounds ###
+
+
+### Idle configuration
+#
+# Example configuration:
+#
+# exec swayidle -w \
+#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#          before-sleep 'swaylock -f -c 000000'
+#
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+
+
+### Special keybinds ###
+    bindsym $mod+Return exec $term
+    bindsym $mod+I exec $browser
+    bindsym $mod+Shift+q kill # close current window
+    bindsym $mod+D exec discord --enable-features=UseOzonePlatform --ozone-platform=wayland # otherwise discord is blurry
+
+    # Sway related
+    bindsym $mod+Shift+c reload # reload this config file (not everything can be refreshed this way)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'Are you sure you want to quit Sway?' -B 'Yes, exit Sway' 'swaymsg exit'
+
+    # Window management
+    bindsym $mod+b splith # make next split to left
+    bindsym $mod+v splitv # make next split to bottom
+    bindsym $mod+f fullscreen
+    bindsym $mod+Shift+space floating toggle # float window
+    bindsym $mod+space focus mode_toggle     # swap focus between floating and tiled window
+### Special keybinds ###
+
+
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $mod normal
+
+
+### Moving around ###
+    bindsym $mod+$left        focus left
+    bindsym $mod+$down        focus down
+    bindsym $mod+$up          focus up
+    bindsym $mod+$right       focus right
+    bindsym $mod+Shift+$left  move  left
+    bindsym $mod+Shift+$down  move  down
+    bindsym $mod+Shift+$up    move  up
+    bindsym $mod+Shift+$right move  right
+### Moving around ###
+
+
+### Decoration ###
+    gaps inner 10
+    default_border pixel 
+    font Hermit 14
+    client.focused $cl-blue $cl-blue $cl-foreground
+### Decoration ###
+
+
+### Workspaces ###
+    bindsym $mod+1 workspace number 1
+    bindsym $mod+2 workspace number 2
+    bindsym $mod+3 workspace number 3
+    bindsym $mod+4 workspace number 4
+    bindsym $mod+5 workspace number 5
+    bindsym $mod+6 workspace number 6
+    bindsym $mod+7 workspace number 7
+    bindsym $mod+8 workspace number 8
+    bindsym $mod+9 workspace number 9
+    bindsym $mod+0 workspace number 10
+
+    bindsym $mod+Shift+1 move container to workspace number 1,  workspace number 1
+    bindsym $mod+Shift+2 move container to workspace number 2,  workspace number 2
+    bindsym $mod+Shift+3 move container to workspace number 3,  workspace number 3
+    bindsym $mod+Shift+4 move container to workspace number 4,  workspace number 4
+    bindsym $mod+Shift+5 move container to workspace number 5,  workspace number 5
+    bindsym $mod+Shift+6 move container to workspace number 6,  workspace number 6
+    bindsym $mod+Shift+7 move container to workspace number 7,  workspace number 7
+    bindsym $mod+Shift+8 move container to workspace number 8,  workspace number 8
+    bindsym $mod+Shift+9 move container to workspace number 9,  workspace number 9
+    bindsym $mod+Shift+0 move container to workspace number 10, workspace number 10
+### Workspaces ###
+
+
+### XF86 keybinds ###
+    bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+    bindsym XF86MonBrightnessUp   exec xbacklight -inc 5
+    bindsym XF86AudioRaiseVolume  exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ --limit 1.0
+    bindsym XF86AudioLowerVolume  exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+    bindsym XF86AudioMute         exec wpctl set-mute   @DEFAULT_AUDIO_SINK@ toggle
+### XF86 keybinds ###
+
+
+### Resizing windows ###
+    bindsym $mod+r mode "resize"
+    mode "resize" {
+        bindsym $left  resize shrink width  75px
+        bindsym $down  resize grow   height 75px
+        bindsym $up    resize shrink height 75px
+        bindsym $right resize grow   width  75px
+        bindsym Return mode "default" # return to NORMAL mode
+        bindsym Escape mode "default" # return to NORMAL mode
+    }
+### Resizing windows ###
+
+
+### Statusbar ###
+    bar {
+        swaybar_command waybar
+    }
+### Statusbar ###
+
+include /etc/sway/config.d/*

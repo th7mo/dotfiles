@@ -1,0 +1,44 @@
+window:
+  padding:
+    x: 10
+    y: 10
+
+font:
+  normal:
+    family: Hermit
+    style: Regular
+  bold:
+    family: Hermit
+    style: Regular # For Hermit the Bold font is wider than Regular
+  italic:
+    family: Hermit
+    style: Italic
+  bold_italic:
+    family: Hermit
+    style: BoldItalic
+  size: 15
+
+colors:
+  primary:
+    background: '#2d353b'
+    foreground: '#d3c6aa'
+
+  normal:
+    black: '#2d353b'
+    red: '#e67e80'
+    green: '#a7c080'
+    yellow: '#dbbc7f'
+    blue: '#7fbbb3'
+    magenta: '#d699b6'
+    cyan: '#83c092'
+    white: '#d3c6aa'
+
+  bright:
+    black: '#2d353b'
+    red: '#e67e80'
+    green: '#a7c080'
+    yellow: '#dbbc7f'
+    blue: '#7fbbb3'
+    magenta: '#d699b6'
+    cyan: '#83c092'
+    white: '#d3c6aa'
