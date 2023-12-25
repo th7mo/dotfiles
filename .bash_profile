@@ -5,4 +5,3 @@ fi
 # This adds the ssh key for GitHub to the keychain (see: https://wiki.gentoo.org/wiki/Keychain).
 keychain ~/.ssh/id_ed25519
 . ~/.keychain/${HOSTNAME}-sh
-. ~/.keychain/${HOSTNAME}-sh-gpg

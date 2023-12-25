@@ -1,3 +1,5 @@
+# !NOTE: Only put comments on a empty line, otherwise the config on that line will not work.
+
 ### Variables ###
     set $mod Mod4
     set $left h
@@ -47,19 +49,22 @@
 ### Special keybinds ###
     bindsym $mod+Return exec $term
     bindsym $mod+I exec $browser
-    bindsym $mod+Shift+q kill # close current window
-    bindsym $mod+D exec discord --enable-features=UseOzonePlatform --ozone-platform=wayland # otherwise discord is blurry
+    bindsym $mod+Shift+q kill
+    bindsym $mod+D exec discord --enable-features=UseOzonePlatform --ozone-platform=wayland
+
+    # Add --type image/png flag otherwise it copies as text? (https://github.com/bugaevc/wl-clipboard/issues/198#issuecomment-1752969533)
+    bindsym $mod+Shift+S exec grim -g "$(slurp)" - | wl-copy --type image/png
 
     # Sway related
-    bindsym $mod+Shift+c reload # reload this config file (not everything can be refreshed this way)
+    bindsym $mod+Shift+c reload
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Are you sure you want to quit Sway?' -B 'Yes, exit Sway' 'swaymsg exit'
 
     # Window management
-    bindsym $mod+b splith # make next split to left
-    bindsym $mod+v splitv # make next split to bottom
+    bindsym $mod+b split horizontal
+    bindsym $mod+v split vertical
     bindsym $mod+f fullscreen
-    bindsym $mod+Shift+space floating toggle # float window
-    bindsym $mod+space focus mode_toggle     # swap focus between floating and tiled window
+    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+space focus mode_toggle
 ### Special keybinds ###
 
 
@@ -132,8 +137,10 @@ floating_modifier $mod normal
         bindsym $down  resize grow   height 75px
         bindsym $up    resize shrink height 75px
         bindsym $right resize grow   width  75px
-        bindsym Return mode "default" # return to NORMAL mode
-        bindsym Escape mode "default" # return to NORMAL mode
+
+        # return to normal mode
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
     }
 ### Resizing windows ###
 
