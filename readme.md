@@ -2,6 +2,7 @@
 
 This repository stores all my custom configuration for my linux workflow.
 I use [Sway](https://github.com/swaywm/sway) as a tiling window manager, [Alacritty](https://github.com/alacritty/alacritty) as terminal emulator and [Helix](https://helix-editor.com/) as my primary text editor.
+I use the [Everforest Medium Dark](https://github.com/sainnhe/everforest) color scheme for most applications.
 
 ## Managing dotfiles
 
