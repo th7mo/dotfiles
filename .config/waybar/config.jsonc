@@ -31,9 +31,17 @@
   },
   "sway/workspaces": {
     "format": "",
+    "all-outputs": true,
+    "disable-scroll": true,
+    // Persistent workspaces do not work on Sway, workspaces get killed when empty.
+    // I keep this around for the case Sway ever implements this feature.
     "persistent-workspaces": {
-      "1": []
-    },
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
   },
   "bluetooth": {
     "tooltip": false,

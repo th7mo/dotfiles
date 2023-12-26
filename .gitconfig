@@ -21,3 +21,5 @@
 	editor = helix
 [pull]
 	rebase = false
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig
