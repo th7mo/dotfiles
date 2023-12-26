@@ -2,8 +2,7 @@
     "layer": "top",
     "modules-left": [
         "clock",
-        "sway/mode",
-        "sway/window"
+        "sway/mode"
     ],
     "modules-center": [
         "sway/workspaces"
@@ -23,11 +22,6 @@
     },
     "sway/mode": {
         "tooltip": false
-    },
-    "sway/window": {
-        "tooltip": false,
-        "max-length": 50,
-        "format": "{app_id}"
     },
     "sway/workspaces": {
         "format": "",

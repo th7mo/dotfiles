@@ -25,10 +25,6 @@ window#waybar {
     background-color: @crust;
 }
 
-window#waybar.empty #window {
-    background-color: transparent;
-}
-
 #workspaces button {
     padding: 2px 8px;
     margin: 0 4px;
@@ -51,7 +47,6 @@ window#waybar.empty #window {
 
 #clock,
 #mode,
-window#waybar #window,
 #backlight,
 #wireplumber,
 #bluetooth,
