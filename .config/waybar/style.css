@@ -5,47 +5,48 @@
 @define-color red #e67e80;
 
 * {
-  font-family: Ubuntu Nerd Font;
-  font-weight: bold;
-  font-size: 8px; /* dictates the size of the workspace dots & pillow */
-  margin: 0;
-  padding: 0;
-  box-shadow: none;
-  text-shadow: none;
-  background: none;
-  transition: none;
-  border: none;
-  min-width: 0;
-  min-height: 0;
+    font-family: Ubuntu Nerd Font;
+    font-weight: bold;
+    /* font-size dictates the size of the workspace dots & pillow */
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    text-shadow: none;
+    background: none;
+    transition: none;
+    border: none;
+    min-width: 0;
+    min-height: 0;
 }
 
 window#waybar {
-  color: @text;
-  background-color: @crust;
+    color: @text;
+    background-color: @crust;
 }
 
 window#waybar.empty #window {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 #workspaces button {
-  padding: 2px 8px;
-  margin: 0 4px;
-  border-radius: 9999px;
-  background-color: @gray;
+    padding: 2px 8px;
+    margin: 0 4px;
+    border-radius: 9999px;
+    background-color: @gray;
 }
 
 #workspaces button.focused {
-  padding: 2px 18px;
-  color: @crust;
-  background-color: @text;
+    padding: 2px 18px;
+    color: @crust;
+    background-color: @text;
 }
 
 #workspaces {
-  padding: 8px;
-  margin: 10px 3px;
-  border-radius: 18px;
-  background-color: @base;
+    padding: 8px;
+    margin: 10px 3px;
+    border-radius: 18px;
+    background-color: @base;
 }
 
 #clock,
@@ -57,22 +58,22 @@ window#waybar #window,
 #network,
 #battery,
 #custom-power {
-  padding: 5px 13px;
-  margin: 10px 3px;
-  font-size: 18px;
-  border-radius: 18px;
-  color: @text;
-  background-color: @base;
+    padding: 5px 13px;
+    margin: 10px 3px;
+    font-size: 18px;
+    border-radius: 18px;
+    color: @text;
+    background-color: @base;
 }
 
 #clock {
-  margin-left: 6px;
+    margin-left: 6px;
 }
 
 #custom-power {
-  margin-right: 6px;
+    margin-right: 6px;
 }
 
 #battery.low:not(.charging) {
-  color: @red;
+    color: @red;
 }

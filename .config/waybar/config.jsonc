@@ -1,116 +1,116 @@
 {
-  "layer": "top",
-  "modules-left": [
-    "clock",
-    "sway/mode",
-    "sway/window"
-  ],
-  "modules-center": [
-    "sway/workspaces"
-  ],
-  "modules-right": [
-    "backlight",
-    "wireplumber",
-    "bluetooth",
-    "network",
-    "battery",
-    "custom/power"
-  ],
-  "custom/power": {
-    "tooltip": false,
-    "format": "",
-    "on-click": "shutdown -h now"
-  },
-  "sway/mode": {
-    "tooltip": false
-  },
-  "sway/window": {
-    "tooltip": false,
-    "max-length": 50,
-    "format": "{app_id}"
-  },
-  "sway/workspaces": {
-    "format": "",
-    "all-outputs": true,
-    "disable-scroll": true,
-    // Persistent workspaces do not work on Sway, workspaces get killed when empty.
-    // I keep this around for the case Sway ever implements this feature.
-    "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
-    }
-  },
-  "bluetooth": {
-    "tooltip": false,
-    "on-click": "blueman-manager",
-    "format-connected": "󰂱 {device_alias}",
-    "format-off": "󰂲",
-    "format-disabled": "󰂲",
-    "format-on": "󰂯"
-  },
-  "clock": {
-    "format": "󱑎 {:%H:%M}",
-    "tooltip": false,
-    "format-alt": "󰃭 {:%a %d %b}"
-  },
-  "backlight": {
-    "format": "{icon} {percent}%",
-    "tooltip": false,
-    "format-icons": [
-      "󰃞",
-      "󰃝",
-      "󰃟",
-      "󰃠"
-    ]
-  },
-  "battery": {
-    "tooltip": false,
-    "states": {
-      "low": 30
+    "layer": "top",
+    "modules-left": [
+        "clock",
+        "sway/mode",
+        "sway/window"
+    ],
+    "modules-center": [
+        "sway/workspaces"
+    ],
+    "modules-right": [
+        "backlight",
+        "wireplumber",
+        "bluetooth",
+        "network",
+        "battery",
+        "custom/power"
+    ],
+    "custom/power": {
+        "tooltip": false,
+        "format": "",
+        "on-click": "shutdown -h now"
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-icons": [
-      "󰂎",
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ]
-  },
-  "network": {
-    "tooltip": false,
-    "format-wifi": "{icon} {essid}",
-    "format-ethernet": "󰈀 {ipaddr}/{cidr}",
-    "format-linked": "{ifname} (No IP)",
-    "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ]
-  },
-  "wireplumber": {
-    "tooltip": false,
-    "format": "{icon} {volume}%",
-    "max-volume": 100,
-    "format-muted": "󰖁",
-    "format-icons": [
-      "",
-      "",
-      "󰕾",
-      ""
-    ]
-  }
+    "sway/mode": {
+        "tooltip": false
+    },
+    "sway/window": {
+        "tooltip": false,
+        "max-length": 50,
+        "format": "{app_id}"
+    },
+    "sway/workspaces": {
+        "format": "",
+        "all-outputs": true,
+        "disable-scroll": true,
+        // Persistent workspaces do not work on Sway, workspaces get killed when empty.
+        // I keep this around for the case Sway ever implements this feature.
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "bluetooth": {
+        "tooltip": false,
+        "on-click": "blueman-manager",
+        "format-connected": "󰂱 {device_alias}",
+        "format-off": "󰂲",
+        "format-disabled": "󰂲",
+        "format-on": "󰂯"
+    },
+    "clock": {
+        "format": "󱑎 {:%H:%M}",
+        "tooltip": false,
+        "format-alt": "󰃭 {:%a %d %b}"
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "tooltip": false,
+        "format-icons": [
+            "󰃞",
+            "󰃝",
+            "󰃟",
+            "󰃠"
+        ]
+    },
+    "battery": {
+        "tooltip": false,
+        "states": {
+            "low": 30
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+    "network": {
+        "tooltip": false,
+        "format-wifi": "{icon} {essid}",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ]
+    },
+    "wireplumber": {
+        "tooltip": false,
+        "format": "{icon} {volume}%",
+        "max-volume": 100,
+        "format-muted": "󰖁",
+        "format-icons": [
+            "",
+            "",
+            "󰕾",
+            ""
+        ]
+    }
 }
