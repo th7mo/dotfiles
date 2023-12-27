@@ -1,7 +1,10 @@
 # Dotfiles
 
 This repository stores all my custom configuration for my linux workflow.
-I use [Sway](https://github.com/swaywm/sway) as a tiling window manager, [Alacritty](https://github.com/alacritty/alacritty) as terminal emulator and [Helix](https://helix-editor.com/) as my primary text editor.
+
+It has a branch for [Wayland](https://wayland.freedesktop.org/) and [X](https://www.x.org/wiki/).
+For Wayland I use [Sway](https://github.com/swaywm/sway) as a tiling window manager and [Alacritty](https://github.com/alacritty/alacritty) as terminal emulator. For X I use [i3](https://www.x.org/wiki/).
+I use [Helix](https://helix-editor.com/) as my primary text editor.
 I use the [Everforest Medium Dark](https://github.com/sainnhe/everforest) color scheme for most applications.
 
 ## Managing dotfiles
