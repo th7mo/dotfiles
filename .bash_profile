@@ -1,7 +1,10 @@
+# /etc/skel/.bash_profile
+
+# This file is sourced by bash for login shells.  The following line
+# runs your .bashrc and is recommended by the bash info pages.
 if [[ -f ~/.bashrc ]] ; then
 	. ~/.bashrc
 fi
 
-# This adds the ssh key for GitHub to the keychain (see: https://wiki.gentoo.org/wiki/Keychain).
+# Add SSH keys on startup
 keychain ~/.ssh/id_ed25519
-keychain ~/.ssh/id_ed25519_work

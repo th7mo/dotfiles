@@ -5,18 +5,17 @@ window:
 
 font:
   normal:
-    family: Hermit
+    family: PPSupplyMono
     style: Regular
   bold:
-    family: Hermit
-    style: Regular # For Hermit the Bold font is wider than Regular
+    family: PPSupplyMono
+    style: Bold
   italic:
-    family: Hermit
+    family: PPSupplyMono
     style: Italic
   bold_italic:
-    family: Hermit
+    family: PPSupplyMono
     style: BoldItalic
-  size: 15
 
 colors:
   primary:
