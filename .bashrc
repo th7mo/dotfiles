@@ -13,3 +13,5 @@ fi
 source /usr/share/git/git-prompt.sh
 export PS1='\[\033[01;32m\]\u\[\033[01;34m\] \W\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 export GIT_PS1_SHOWDIRTYSTATE=1
+
+PATH=$PATH:/opt/audiorelay/bin
