@@ -30,6 +30,7 @@
 	bindsym $mod+Return exec --no-startup-id $terminal
 	bindsym $mod+i      exec --no-startup-id $browser
 	bindsym $mod+d      exec --no-startup-id dmenu_run
+	bindsym $mod+s      exec --no-startup-id flatpak run com.valvesoftware.Steam
 
 	# tiling window management
 	bindsym $mod+Shift+q kill
