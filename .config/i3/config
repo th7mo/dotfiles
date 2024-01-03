@@ -32,6 +32,7 @@
 	bindsym $mod+d      exec --no-startup-id dmenu_run
 
 	# tiling window management
+	bindsym $mod+Shift+q kill
 	bindsym $mod+$left  focus left
 	bindsym $mod+$down  focus down
 	bindsym $mod+$up    focus up
@@ -43,8 +44,8 @@
 	bindsym $mod+v split v
 	bindsym $mod+b split h
 	bindsym $mod+f fullscreen toggle
-	bindsym $mod+Shift+Space  floating toggle
-	bindsym $mod+Space        focus mode_togle
+	bindsym $mod+Shift+space  floating toggle
+	bindsym $mod+space        focus mode_toggle
 
 	# i3 specific
 	bindsym $mod+Shift+c reload
