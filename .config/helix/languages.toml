@@ -1,0 +1,6 @@
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "ltex-ls" ]
+
+[language-server.ltex-ls.config]
+ltex.dictionary = { "en-US" = ["builtin"], "nl-NL" = ["builtin"] }
