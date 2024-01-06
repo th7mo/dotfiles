@@ -1,0 +1,5 @@
+# Let Stow ignore these files:
+\.git
+\.gitignore
+^/readme.*
+^/LICENSE.*

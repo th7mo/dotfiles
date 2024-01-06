@@ -1,0 +1,25 @@
+[user]
+	email = thimo@th7mo.com
+	name = th7mo
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[alias]
+	a  = add
+	aa = add *
+	b  = branch
+	ba = branch -a
+	c  = commit -m
+	s  = status
+	p  = push
+	f  = fetch
+	l  = log --oneline
+	ll = log --graph
+	sw = switch
+[core]
+	editor = helix
+[pull]
+	rebase = false
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig
