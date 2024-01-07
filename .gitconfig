@@ -11,6 +11,7 @@
 	b  = branch
 	ba = branch -a
 	c  = commit -m
+	d  = diff HEAD
 	s  = status
 	p  = push
 	f  = fetch
