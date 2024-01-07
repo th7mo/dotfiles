@@ -4,3 +4,33 @@ language-servers = [ "marksman", "ltex-ls" ]
 
 [language-server.ltex-ls.config]
 ltex.dictionary = { "en-US" = ["builtin"], "nl-NL" = ["builtin"] }
+
+[[language]]
+name = "html"
+
+[[language]]
+name = "css"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "json"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "typescript"
+
+[[language]]
+name = "javascript"
+
+[[language]]
+name = "bash"
+
+[[language]]
+name = "yaml"
+
+[[language]]
+name = "rust"
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }

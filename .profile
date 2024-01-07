@@ -29,3 +29,4 @@ fi
 # Add SSH keys on startup
 keychain ~/.ssh/id_ed25519
 keychain ~/.ssh/id_ed25519_work
+. "$HOME/.cargo/env"
