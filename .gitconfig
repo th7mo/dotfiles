@@ -18,8 +18,6 @@
 	l  = log --oneline
 	ll = log --graph
 	sw = switch
-[core]
-	editor = helix
 [pull]
 	rebase = false
 [includeIf "gitdir:~/work/"]
