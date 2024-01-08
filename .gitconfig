@@ -15,7 +15,7 @@
 	s  = status
 	p  = push
 	f  = fetch
-	l  = log --oneline
+	l  = log --oneline --max-count 20
 	ll = log --graph
 	sw = switch
 [pull]
