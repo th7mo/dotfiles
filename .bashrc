@@ -126,3 +126,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 . "$HOME/.cargo/env"
+
+# Helix as default editor
+export EDITOR="hx"
+export VISUAL="hx"
