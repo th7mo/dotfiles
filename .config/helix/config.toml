@@ -2,9 +2,10 @@ theme = "tokyonight_storm"
 
 [editor]
 cursorline = true
+line-number = "relative"
 color-modes = true
 mouse = false
-idle-timeout = 0
+idle-timeout = 0 # Instant autocomplete
 scrolloff = 10
 bufferline = "always"
 gutters = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
@@ -20,7 +21,14 @@ skip-levels = 1
 hidden = false
 
 [editor.cursor-shape]
+normal = "block"
 insert = "bar"
+select = "underline"
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
 [keys.normal]
 "C-q" = ":buffer-close"
