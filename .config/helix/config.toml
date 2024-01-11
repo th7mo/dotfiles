@@ -3,31 +3,44 @@ theme = "tokyonight_storm"
 [editor]
 cursorline = true
 color-modes = true
-bufferline = "always"
 mouse = false
+idle-timeout = 0
+scrolloff = 10
+bufferline = "always"
+gutters = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
 
 [editor.soft-wrap]
 enable = true
 
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
 [editor.file-picker]
 hidden = false
 
+[editor.cursor-shape]
+insert = "bar"
+
 [keys.normal]
 "C-q" = ":buffer-close"
-"A-j" = [ # Move current line down
+"A-j" = [ # Move current line down by 1
   "extend_to_line_bounds",
   "delete_selection",
   "paste_after",
   "goto_line_start"
 ]
-"A-k" = [ # Move current line up
+"A-k" = [ # Move current line up by 1
   "extend_to_line_bounds",
   "delete_selection",
   "move_line_up",
   "paste_before",
   "goto_line_start"
 ]
-"esc" = ["collapse_selection", "keep_primary_selection"]
+"esc" = [
+  "collapse_selection",
+  "keep_primary_selection"
+]
 
-[editor.cursor-shape]
-insert = "bar"
+[keys.normal.space]
+l = ":toggle lsp.display-inlay-hints"
