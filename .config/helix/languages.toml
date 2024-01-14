@@ -1,11 +1,4 @@
 [[language]]
-name = "markdown"
-language-servers = [ "marksman", "ltex-ls" ]
-
-[language-server.ltex-ls.config]
-ltex.dictionary = { "en-US" = ["builtin"], "nl-NL" = ["builtin"] }
-
-[[language]]
 name = "html"
 
 [[language]]
@@ -35,3 +28,30 @@ name = "rust"
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "ltex-ls" ]
+
+# This is a temporary workaround for adding custom words to the dictionary.
+# Please check the thread (https://github.com/helix-editor/helix/issues/7636) once in a while
+# to validate of there is a better implementation available.
+[language-server.ltex-ls.config]
+ltex.dictionary = { "en-US" = [
+  "builtin",
+  "NetworkManager",
+  "worktree",
+  "worktrees",
+  "Worktree",
+  "Worktrees",
+  "dotfile",
+  "dotfiles",
+  "Dotfile",
+  "Dotfiles",
+  "eduroam",
+  "Eduroam",
+  "iwd",
+  "Iwd"
+], "nl-NL" = [
+  "builtin"
+]}
