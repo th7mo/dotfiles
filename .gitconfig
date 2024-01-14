@@ -16,7 +16,7 @@
 	s  = status
 	p  = push
 	f  = fetch
-	l  = log --oneline --max-count 20
+	l  = log --oneline --decorate --max-count 20
 	ll = log --graph --decorate
 	sw = switch
 	w  = worktree
@@ -24,6 +24,6 @@
 	wl = worktree list
 	wr = worktree remove
 [pull]
-	rebase = false
+	rebase = true
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
