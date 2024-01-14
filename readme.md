@@ -5,7 +5,6 @@ This repository stores all my custom configuration for my Linux workflow.
 ## Dependencies
 
 As my primary text editor I use [Helix](https://helix-editor.com/).
-I use the [Everforest Medium Dark](https://github.com/sainnhe/everforest) color scheme for most applications.
 
 ## Managing dotfiles
 
