@@ -2,13 +2,15 @@ theme = "rose_pine_moon"
 
 [editor]
 cursorline = true
-line-number = "relative"
 color-modes = true
 mouse = false
 idle-timeout = 0 # Instant autocomplete
 scrolloff = 10
+line-number = "relative"
 bufferline = "always"
-gutters = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
 
 [editor.soft-wrap]
 enable = true

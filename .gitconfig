@@ -11,13 +11,18 @@
 	b  = branch
 	ba = branch -a
 	c  = commit -m
+	cl = commit
 	d  = diff HEAD
 	s  = status
 	p  = push
 	f  = fetch
 	l  = log --oneline --max-count 20
-	ll = log --graph
+	ll = log --graph --decorate
 	sw = switch
+	w  = worktree
+	wa = worktree add
+	wl = worktree list
+	wr = worktree remove
 [pull]
 	rebase = false
 [includeIf "gitdir:~/work/"]
