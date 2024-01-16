@@ -30,6 +30,10 @@ name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
 [[language]]
+name = "git-commit"
+language-servers = [ "ltex-ls" ]
+
+[[language]]
 name = "markdown"
 language-servers = [ "marksman", "ltex-ls" ]
 
@@ -51,7 +55,9 @@ ltex.dictionary = { "en-US" = [
   "eduroam",
   "Eduroam",
   "iwd",
-  "Iwd"
+  "Iwd",
+  "feat",
+  "Feat"
 ], "nl-NL" = [
   "builtin"
 ]}
