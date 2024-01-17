@@ -130,3 +130,5 @@ esac
 # Helix as default editor
 export EDITOR="hx"
 export VISUAL="hx"
+
+alias g="git"
