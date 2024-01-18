@@ -12,15 +12,19 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "typescript"
 indent = { tab-width = 4, unit = "    " }
+rulers = [120]
 
 [[language]]
 name = "javascript"
+indent = { tab-width = 4, unit = "    " }
+rulers = [120]
 
 [[language]]
 name = "bash"
 
 [[language]]
 name = "yaml"
+indent = { tab-width = 2, unit = "  " }
 
 [[language]]
 name = "rust"
