@@ -5,9 +5,9 @@ cursorline = true
 color-modes = true
 mouse = false
 idle-timeout = 0 # Instant autocomplete
-scrolloff = 10
 line-number = "relative"
 bufferline = "always"
+completion-trigger-len = 1
 
 [editor.gutters]
 layout = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
@@ -18,19 +18,20 @@ enable = true
 [editor.indent-guides]
 render = true
 skip-levels = 1
+ 
+[editor.statusline]
+right = ["diagnostics", "position-percentage", "file-type"]
 
 [editor.file-picker]
 hidden = false
+
+[editor.whitespace.render]
+tab = "all"
 
 [editor.cursor-shape]
 normal = "block"
 insert = "bar"
 select = "underline"
-
-[editor.statusline]
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
 
 [keys.normal]
 "C-q" = ":buffer-close"
@@ -51,6 +52,7 @@ mode.select = "SELECT"
   "collapse_selection",
   "keep_primary_selection"
 ]
+"ret" = ["insert_mode", "insert_newline", "normal_mode"]
 
 [keys.normal.space]
 l = ":toggle lsp.display-inlay-hints"

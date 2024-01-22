@@ -112,7 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:/usr/local/bin/ltex-ls-16.0.0/bin"
+export PATH="$PATH:/usr/local/bin/ltex-ls-16.0.0/bin:$HOME/.local/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -132,3 +132,4 @@ export EDITOR="hx"
 export VISUAL="hx"
 
 alias g="git"
+alias loc="git ls-files | xargs wc -l"

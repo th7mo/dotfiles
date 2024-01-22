@@ -1,3 +1,16 @@
+[language-server.eslint]
+command = "vscode-eslint-language-server"
+args = ["--stdio"]
+
+[language-server.eslint.config]
+# I got this from: https://github.com/helix-editor/helix/issues/3231#issuecomment-1876996743
+validate = "on"
+experimental = { useFlatConfig = false }
+rulesCustomizations = []
+run = "onType"
+problems = { shortenToSingleLine = false }
+nodePath = "" # I might need to check if this is correct
+
 [[language]]
 name = "html"
 
@@ -13,6 +26,7 @@ indent = { tab-width = 4, unit = "    " }
 name = "typescript"
 indent = { tab-width = 4, unit = "    " }
 rulers = [120]
+language-servers = ["typescript-language-server", "eslint"]
 
 [[language]]
 name = "javascript"
@@ -39,6 +53,7 @@ language-servers = [ "ltex-ls" ]
 
 [[language]]
 name = "markdown"
+indent = { tab-width = 4, unit = "    " }
 language-servers = [ "marksman", "ltex-ls" ]
 
 # This is a temporary workaround for adding custom words to the dictionary.
@@ -61,7 +76,10 @@ ltex.dictionary = { "en-US" = [
   "iwd",
   "Iwd",
   "feat",
-  "Feat"
+  "Feat",
+  "gitconfig",
+  "tmux",
+  "Tmux"
 ], "nl-NL" = [
   "builtin"
 ]}
