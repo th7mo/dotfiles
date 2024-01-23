@@ -136,5 +136,5 @@ esac
 export EDITOR="hx"
 export VISUAL="hx"
 
-alias g="git"
 alias loc="git ls-files | xargs wc -l"
+alias g="lazygit"
