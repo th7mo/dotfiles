@@ -27,6 +27,6 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # Add SSH keys on startup
-keychain ~/.ssh/id_ed25519
-keychain ~/.ssh/id_ed25519_work
+keychain ~/.ssh/id_ed25519 > /dev/null 2>&1
+keychain ~/.ssh/id_ed25519_work > /dev/null 2>&1
 . "$HOME/.cargo/env"

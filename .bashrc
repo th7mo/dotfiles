@@ -112,6 +112,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Start TMUX on launch
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 export PATH="$PATH:/usr/local/bin/ltex-ls-16.0.0/bin:$HOME/.local/bin"
 
 export NVM_DIR="$HOME/.nvm"

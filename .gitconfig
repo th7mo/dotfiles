@@ -24,7 +24,5 @@
 	wa = worktree add
 	wl = worktree list
 	wr = worktree remove
-[pull]
-	rebase = true
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
