@@ -4,12 +4,13 @@ theme = "rose_pine_moon"
 cursorline = true
 color-modes = true
 mouse = false
-idle-timeout = 0 # Instant autocomplete
+idle-timeout = 0 # Makes autocompletion popup show after 0ms (instantly).
 line-number = "relative"
 bufferline = "always"
-completion-trigger-len = 1
+completion-trigger-len = 1 # Enable autocompletion when first character is typed.
 
 [editor.gutters]
+# Git diff before line numbers
 layout = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
 
 [editor.soft-wrap]
@@ -28,20 +29,16 @@ hidden = false
 [editor.whitespace.render]
 tab = "all"
 
-[editor.cursor-shape]
-normal = "block"
-insert = "bar"
-select = "underline"
-
 [keys.normal]
-"C-q" = ":buffer-close"
-"A-j" = [ # Move current line down by 1
+# Move current line down (j) by 1
+"A-j" = [ 
   "extend_to_line_bounds",
   "delete_selection",
   "paste_after",
   "goto_line_start"
 ]
-"A-k" = [ # Move current line up by 1
+# Move current line up (k) by 1
+"A-k" = [ 
   "extend_to_line_bounds",
   "delete_selection",
   "move_line_up",
@@ -52,7 +49,9 @@ select = "underline"
   "collapse_selection",
   "keep_primary_selection"
 ]
+# Enter works in normal mode.
 "ret" = ["insert_mode", "insert_newline", "normal_mode"]
 
 [keys.normal.space]
 l = ":toggle lsp.display-inlay-hints"
+q = ":buffer-close"
