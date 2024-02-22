@@ -13,6 +13,9 @@ nodePath = "" # I might need to check if this is correct
 
 [[language]]
 name = "html"
+language-servers = ["vscode-html-language-server", "ltex-ls"]
+rulers = [120]
+auto-format = false
 
 [[language]]
 name = "css"
@@ -32,6 +35,22 @@ language-servers = ["typescript-language-server", "eslint"]
 name = "javascript"
 indent = { tab-width = 4, unit = "    " }
 rulers = [120]
+
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = {typescript = {tsdk = "/home/th7mo/.nvm/versions/node/v20.11.0/lib"}, environment = "node"}
+
+[[language]]
+name = "astro"
+auto-format = true
+language-servers = [ "astro-ls" ]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
 
 [[language]]
 name = "bash"
@@ -54,7 +73,15 @@ language-servers = [ "ltex-ls" ]
 [[language]]
 name = "markdown"
 indent = { tab-width = 4, unit = "    " }
+rulers = [80]
 language-servers = [ "marksman", "ltex-ls" ]
+
+[[language]]
+name = "text"
+scope = "source.text"
+file-types = ["txt"]
+rulers = [60]
+text-width = 60
 
 # This is a temporary workaround for adding custom words to the dictionary.
 # Please check the thread (https://github.com/helix-editor/helix/issues/7636) once in a while
@@ -79,7 +106,23 @@ ltex.dictionary = { "en-US" = [
   "Feat",
   "gitconfig",
   "tmux",
-  "Tmux"
+  "Tmux",
+  "wikilink",
+  "Wikilink",
+  "wikilinks",
+  "Wikilinks",
+  "href",
+  "hx",
+  "Kakoune",
+  "toml",
+  "TODO",
+  "li",
+  "ol",
+  "ul",
+  "refact",
+  "astro",
+  "Astro",
+  "Zsh"
 ], "nl-NL" = [
   "builtin"
 ]}

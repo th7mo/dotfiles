@@ -1,4 +1,4 @@
-theme = "rose_pine_moon"
+theme = "mozilla"
 
 [editor]
 cursorline = true
@@ -7,7 +7,7 @@ mouse = false
 idle-timeout = 5
 line-number = "relative"
 bufferline = "always"
-completion-trigger-len = 1 # Enable autocompletion when first character is typed.
+completion-trigger-len = 1 # Enable autocompletion after first character is typed.
 
 [editor.gutters]
 # Git diff before line numbers
@@ -21,7 +21,7 @@ render = true
 skip-levels = 1
  
 [editor.statusline]
-right = ["diagnostics", "position-percentage", "file-type"]
+right = ["diagnostics", "position", "spacer", "position-percentage", "file-type"]
 
 [editor.file-picker]
 hidden = false
@@ -55,3 +55,11 @@ tab = "all"
 [keys.normal.space]
 l = ":toggle lsp.display-inlay-hints"
 q = ":buffer-close"
+
+# TODO: Append with "mip" and ":reflow" to reflow on paragraph.
+W = [
+  "select_all",
+  "split_selection_on_newline",
+  "trim_selections",
+  "select_textobject_inner",
+]

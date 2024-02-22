@@ -24,5 +24,6 @@
 	wa = worktree add
 	wl = worktree list
 	wr = worktree remove
+	root = rev-parse --show-toplevel
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
