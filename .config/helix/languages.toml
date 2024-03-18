@@ -122,7 +122,8 @@ ltex.dictionary = { "en-US" = [
   "refact",
   "astro",
   "Astro",
-  "Zsh"
+  "Zsh",
+  "Anypoint"
 ], "nl-NL" = [
   "builtin"
 ]}
