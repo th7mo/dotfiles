@@ -124,7 +124,11 @@ ltex.dictionary = { "en-US" = [
   "Astro",
   "Zsh",
   "Anypoint",
-  "Mulesoft"
+  "Mulesoft",
+  "OpenAPI"
 ], "nl-NL" = [
-  "builtin"
+  "builtin",
+  "Anypoint",
+  "Mulesoft",
+  "OpenAPI"
 ]}
