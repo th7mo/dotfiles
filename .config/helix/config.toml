@@ -1,4 +1,4 @@
-theme = "mozilla"
+theme = "sonokai"
 
 [editor]
 cursorline = true
