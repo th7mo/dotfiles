@@ -125,7 +125,9 @@ ltex.dictionary = { "en-US" = [
   "Zsh",
   "Anypoint",
   "Mulesoft",
-  "OpenAPI"
+  "OpenAPI",
+  "Rekordbox",
+  "rekordbox"
 ], "nl-NL" = [
   "builtin",
   "Anypoint",
