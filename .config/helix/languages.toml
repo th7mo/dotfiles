@@ -127,7 +127,10 @@ ltex.dictionary = { "en-US" = [
   "Mulesoft",
   "OpenAPI",
   "Rekordbox",
-  "rekordbox"
+  "rekordbox",
+  "Hemiron",
+  "OpenTelemetry",
+  "Sentry"
 ], "nl-NL" = [
   "builtin",
   "Anypoint",
