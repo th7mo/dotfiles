@@ -16,6 +16,7 @@
 	d  = diff HEAD
 	s  = status
 	p  = push
+	pa = "!f() { git pull --rebase && git submodule foreach git pull --rebase; }; f"
 	f  = fetch
 	l  = log --oneline --decorate --max-count 20
 	ll = log --graph --decorate
