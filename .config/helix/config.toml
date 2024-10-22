@@ -1,4 +1,4 @@
-theme = "kaolin-light"
+theme = "dracula"
 
 [editor]
 cursorline = true
