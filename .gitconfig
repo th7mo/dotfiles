@@ -15,13 +15,13 @@
 	c   = commit -m
 	cp  = "!f() { git commit -m \"$1\" && git push; }; f"
 	cs  = commit -m "*"
-	csp = "!f() { git commit -m "*" && git push; } f"
+	csp = "!git commit -m '*' && git push"
 	ca  = commit -am
 	cl  = commit
 	d   = diff HEAD
 	s   = status
 	p   = push
-	pa  = "!f() { git pull --rebase && git submodule foreach git pull --rebase; }; f"
+	pa  = "!git pull --rebase && git submodule foreach git pull --rebase"
 	f   = fetch
 	l   = log --oneline --decorate --max-count 20
 	ll  = log --graph --decorate

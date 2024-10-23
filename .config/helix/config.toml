@@ -11,7 +11,7 @@ completion-trigger-len = 1 # Enable autocompletion after first character is type
 
 [editor.gutters]
 # Git diff before line numbers
-layout = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
+layout = ["diff", "diagnostics", "spacer", "line-numbers", "spacer", "spacer"]
 
 [editor.soft-wrap]
 enable = true
