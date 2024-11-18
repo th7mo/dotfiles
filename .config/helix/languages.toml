@@ -78,6 +78,7 @@ language-servers = [ "ltex-ls" ]
 name = "markdown"
 indent = { tab-width = 4, unit = "    " }
 rulers = [80]
+file-types = ["md", "mdx"]
 language-servers = [ "marksman", "ltex-ls" ]
 
 [[language]]
