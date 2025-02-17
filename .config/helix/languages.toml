@@ -140,5 +140,14 @@ ltex.dictionary = { "en-US" = [
   "builtin",
   "Anypoint",
   "Mulesoft",
-  "OpenAPI"
+  "stories",
+  "Stories",
+  "OpenAPI",
+  "ICOMMHA",
+  "IPSEN2",
+  "IPSEN3",
+  "IPSEN4",
+  "IPSEN5",
+  "IPSENH",
+  "IPSENHO"
 ]}
