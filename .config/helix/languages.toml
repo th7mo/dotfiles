@@ -71,6 +71,10 @@ name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
 [[language]]
+name = "typst"
+formatter = { command = "typstfmt", args = ["--output", "-"] }
+
+[[language]]
 name = "git-commit"
 language-servers = [ "ltex-ls" ]
 
