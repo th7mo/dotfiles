@@ -1,4 +1,4 @@
-theme = "dracula"
+theme = "viix"
 
 [editor]
 cursorline = true
