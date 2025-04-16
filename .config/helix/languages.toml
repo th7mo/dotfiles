@@ -77,7 +77,6 @@ name = "git-commit"
 name = "typst"
 formatter = { command = "typstfmt", args = ["--output", "-"] }
 rulers = [80]
-language-servers = [ "ltex-ls" ]
 
 [[language]]
 name = "markdown"
@@ -89,9 +88,11 @@ language-servers = [ "marksman", "ltex-ls" ]
 [[language]]
 name = "text"
 scope = "source.text"
-file-types = ["txt"]
-rulers = [60]
-text-width = 60
+file-types = ["txt", "viix"]
+indent = { tab-width = 4, unit = "    " }
+rulers = [80, 100]
+text-width = 80
+language-servers = [ "marksman", "ltex-ls" ]
 
 # This is a temporary workaround for adding custom words to the dictionary.
 # Please check the thread (https://github.com/helix-editor/helix/issues/7636) once in a while
@@ -140,7 +141,8 @@ ltex.dictionary = { "en-US" = [
   "rekordbox",
   "Hemiron",
   "OpenTelemetry",
-  "Sentry"
+  "Sentry",
+  "viix"
 ], "nl-NL" = [
   "builtin",
   "Anypoint",
