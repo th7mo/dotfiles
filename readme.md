@@ -1,6 +1,6 @@
 # Dotfiles
 
-This repository stores all my custom configuration for my Linux workflow.
+This repository contains all my custom configuration for my Linux workflow.
 
 ## Dependencies
 
@@ -15,10 +15,13 @@ Install Stow by executing the following command:
 sudo apt install stow
 ```
 
-Stow is a simple tool that creates symbolic links from the `~/dotfiles/` folder to the `~/` home folder.
-Mirror what the `~/` folder structure should be exactly inside the `~/dotfiles/` folder, since Stow will create symlinks reflecting the same structure.
+Stow is a simple tool that creates symbolic links from the `~/dotfiles/` folder
+to the `~/` home folder. Mirror what the `~/` folder structure should be exactly
+inside the `~/dotfiles/` folder, since Stow will create symlinks reflecting the
+same structure.
 
-To create symbolic links for all the files in the `~/dotfiles/` folder to the `~/` folder, execute the following command:
+To create symbolic links for all the files in the `~/dotfiles/` folder to the
+`~/` folder, execute the following command:
 
 ```sh
 stow ~/dotfiles/
@@ -31,6 +34,7 @@ stow .
 ```
 
 > [!WARNING]
-> Be careful with where to execute this command.
-> Only execute `stow .` at the root of the repository, otherwise the symbolic links will be invalid.
-> Also be careful when removing symlinks and make sure to have a backup of the original configuration files (dotfiles).
+> Be careful with where to execute this command. Only execute `stow .` at the
+> root of the repository, otherwise the symbolic links will be invalid. Also be
+> careful when removing symlinks and make sure to have a backup of the original
+> configuration files (dotfiles).
