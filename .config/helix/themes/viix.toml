@@ -7,11 +7,22 @@
 "ui.linenr.selected" = { fg = "blue", modifiers = ["bold"] }
 "ui.statusline" = "white"
 "ui.statusline.inactive" = "gray"
-"ui.statusline.insert" = { fg = "black", bg = "blue" }
-"ui.highlight" = "blue"
+"ui.statusline.insert" = { fg = "black", bg = "white" }
+"ui.statusline.select" = { fg = "black", bg = "blue" }
 "ui.window" = "white"
+"ui.highlight" = "blue"
+"ui.text.focus" = "blue"
+"ui.virtual.ruler" = { bg = "gray" }
 
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "red", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
+
+"warning" = "red"
 "error" = "red"
+"info" = "blue"
+"hint" = "blue"
 
 "keyword" = { fg = "blue", modifiers = ["bold"] }
 "comment" = { fg = "gray" }
@@ -23,6 +34,6 @@
 white = "#ffffff"
 black = "#000000"
 blue = "#818eae"
-gray = "#585959"
+gray = "#3a3b3b"
 green = "#90b38a"
 red = "#c08484"
