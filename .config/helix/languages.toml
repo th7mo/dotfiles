@@ -143,7 +143,10 @@ ltex.dictionary = { "en-US" = [
   "OpenTelemetry",
   "Sentry",
   "viix",
-  "th7mo"
+  "th7mo",
+  "Sonoset",
+  "AIFF",
+  "ALAC"
 ], "nl-NL" = [
   "builtin",
   "Anypoint",
